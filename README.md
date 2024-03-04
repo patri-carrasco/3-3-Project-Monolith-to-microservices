@@ -40,9 +40,15 @@ Set the config values for environment variables prefixed with `AWS_` in `set_env
 ### 3. Backend API
 Launch the backend API locally. The API is the application's interface to S3 and the database.
 
+* Set the configuration values as environment variables:
+    ```bash
+    source set_env.sh
+    ```
+
 * To download all the package dependencies, run the command from the directory `udagram-api/`:
     ```bash
-    npm install .
+    npm install 
+    cd udagram-api/
     ```
 * To run the application locally, run:
     ```bash
@@ -51,11 +57,18 @@ Launch the backend API locally. The API is the application's interface to S3 and
 * You can visit `http://localhost:8080/api/v0/feed` in your web browser to verify that the application is running. You should see a JSON payload. Feel free to play around with Postman to test the API's.
 
 ### 4. Frontend App
-Launch the frontend app locally.
+Launch the frontend app locally. Open a new terminal/Gitbash window and navigate to the project directory, and run these commands:
+
+* Set the configuration values as environment variables:
+
+    ```bash
+    source set_env.sh
+    cd /udagram-frontend 
+    ```
 
 * To download all the package dependencies, run the command from the directory `udagram-frontend/`:
     ```bash
-    npm install .
+    npm install -f
     ```
 * Install Ionic Framework's Command Line tools for us to build and run the application:
     ```bash

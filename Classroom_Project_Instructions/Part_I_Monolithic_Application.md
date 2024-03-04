@@ -4,6 +4,13 @@ Now that you have set up the AWS PostgreSQL database and S3 bucket, and saved th
 
 ## Backend App
 
+### Set the configuration values as environment variables:
+Open a new terminal/Gitbash window and navigate to the project directory, and run these commands:
+```bash
+source set_env.sh
+cd udagram-api/
+```
+
 ### Download Dependencies
 Download all the package dependencies by running the following command from the `/project/udagram-api/` directory:
 ```bash
@@ -19,10 +26,19 @@ npm run dev
 Once this command is run successfully, visit the `http://localhost:8080/api/v0/feed` in your web browser to verify that the application is running. You should see a JSON payload.
 
 ## Frontend App
+
+### Set the configuration values as environment variables:
+Open a new terminal/Gitbash window and navigate to the project directory, and run these commands:
+```bash
+source set_env.sh
+cd udagram-frontend/ 
+```
+
+
 ### Download Dependencies
 Download all the package dependencies by running the following command from the `/project/udagram-frontend/` directory:
 ```bash
-npm install .
+npm install -f
 ```
 
 ### Build and Run the Project
