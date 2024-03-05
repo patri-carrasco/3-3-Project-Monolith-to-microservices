@@ -27,7 +27,7 @@ script:
   - docker tag udagram-frontend patricarrasco/udagram-frontend:latest  
 
 #reverseproxy
-  - docker build -t reverseproxy ./reverseproxy
+  - docker build -t reverseproxy ./udagram-reverseproxy
   - docker tag reverseproxy patricarrasco/reverseproxy:latest  
 
 
