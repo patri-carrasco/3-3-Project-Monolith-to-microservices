@@ -41,6 +41,17 @@ Follow the instructions provided by AWS on [Creating a Managed Node Group](https
 ### Connecting kubectl with EKS
 Follow the instructions provided by AWS on [Create a kubeconfig for Amazon EKS](https://docs.aws.amazon.com/eks/latest/userguide/create-kubeconfig.html). This will make it such that your `kubectl` will be running against your newly-created EKS cluster.
 
+```bash
+aws configure
+```
+```bash
+aws configure set aws_session_token "<SESSIONTOKENHERE>"
+```
+
+```bahs
+aws eks --region us-east-1 update-kubeconfig --name {NameCluster}
+```
+
 #### Verify Cluster and Connection
 Once `kubectl` is configured to communicate with your EKS cluster, run the following to validate that it's working:
 ```bash
